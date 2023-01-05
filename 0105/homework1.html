@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(hw.css);
+    </style>
+</head>
+<body>
+    <div class="Id" id="id">
+        아이디를 입력하세요
+        <button onclick="bt1('none')">닫기1</button>
+    </div>
+    <button onclick="bt1('block')">열기1</button>
+    <div class="PS" id="ps">
+        비번입력하셈
+        <button onclick="bt2('none')">닫기2</button>
+    </div>
+    <button onclick="bt2('block')">열기2</button>
+
+
+
+
+    <script>
+        function bt1(rnajd){
+            document.getElementById('id').style. display = rnajd;
+        }
+        function bt2(rnajd){
+            document.getElementById('ps').style. display = rnajd;
+        }
+
+    </script>
+</body>
+</html>
