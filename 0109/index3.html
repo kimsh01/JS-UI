@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(index3.css);
+    </style>
+</head>
+<body>
+    <div class="alert-box" id="alert">
+        <p id="title">알림창임</p>
+        <button onclick="dkdl('none')">닫기</button>
+    </div>
+
+    <button onclick="chan()">버튼1</button>
+    <div class="example" id="example">
+        <span>Example</span>
+        <button id="close">닫기2</button>
+    </div>
+    <button id="ahdi">열기2</button>
+    
+
+    <script>
+        document.getElementById('ahdi').addEventListener('click', function(){
+            document.getElementById('example').style.display = 'block';
+        });
+        // addEventListner 사용법 기초.
+
+        function dkdl(rnajd){
+            document.getElementById('alert').style.display = rnajd;
+        }
+
+        function chan(){
+            document.getElementById('title').innerHTML = '아이디 입력하셈';
+            document.getElementById('alert').style.display = 'block';
+        }
+        // function(함수) 하나에 효과 두개(document...) 쓸 수 있음.
+    </script>
+</body>
+</html>
